@@ -1,0 +1,338 @@
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+/*  height:665px; */
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia
+   los costados y el margin: auto; para tenerlo centrado fácilmente */
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  float: none; 
+  display: block;
+  max-width: 5.6rem;
+  height: auto;
+}
+
+ul#menu {
+  display: flex;
+  font-size: 20px;
+}
+
+li.menu-boton a {
+  padding: 16px;
+  display: inline-block;
+}
+
+li.menu-boton a.active {
+  color: rgba(8, 201, 207, 0.911);
+  display: inline-block;
+}
+
+/* Colocar una barra sombreada*/
+hr {
+  border:none;
+/*  height: 20px;  */
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #dacbbc;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+  margin-bottom: 10px;
+} 
+
+section {
+  min-height: 80vh;
+  margin: 1em;
+}
+
+#foto {   
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para redondear los bordes de la imagen */
+.fotoj {
+    display: inline-block;
+    position: relative;
+    width: 150px; 
+    height: 250px;
+    overflow: hidden; 
+    border-radius: 50%;
+} 
+  
+.fotoj img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+} 
+
+/* Redondear el boton */
+.boton {
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #4fc1b9ff;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  flex-wrap: wrap;
+}
+
+/* Centrar el boton */
+button {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  margin: 0 auto;
+}
+
+section {
+  flex-direction: row;
+  min-height: 80vh;
+  margin: 1em;
+}
+
+/* Crear las cajas que contienen el texto de Inicio y Contacto */
+article {
+  width: 98%;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  color: #000000;
+  font-size: 20px; 
+  font-weight: 350; 
+  text-align: center;
+  overflow: hidden; 
+/*  padding: 1px; */
+  margin: 50px 20px; 
+}
+
+#contacto {
+  background: #c3e5e6ff;
+  border-radius: 50px;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Alinear los iconos de redes sociales */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.li iconrs {
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+nav {
+	float: none;
+}
+  nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 40px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+      nav ul li a:hover {
+					background: #01a59cff; 
+/*          background: white; */
+				}
+
+#iconos {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Agrega el boton para ir hacia arriba cuando se haga scroll de la pagina */
+.btn-scrolltop {
+  position: fixed; 
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background: rgb(13, 204, 211);
+  color: white;
+  border: 1px solid white;
+  border-radius: 100px;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0,3s; 
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+}
+
+/* Alineacion y color del pie de pagina */
+#piecito {
+  background: #01a59cff;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 30px;
+  bottom: 300px;
+}
+	#piecito p {
+		margin: 0;
+	}
+	
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* Seccion responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+ 
+  h1 {
+     font-size: 2.2rem;
+  }
+ 
+  h2 {
+    font-size: 1.8rem; 
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+		line-height: 20px;
+  }
+ 
+  footer {
+    padding: 10px;
+  }
+  
+  .logo {
+    max-width: 4.5rem;
+  }
+
+  .fotoj {
+    width: 110px; 
+    height: 210px;
+  }
+
+  .iconrs {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 20px; 
+  }
+
+  img {
+    max-width: 50%;
+    height: auto;
+  }
+
+}
+
+/* Responsive de la pagina web */
+/* @media (max-width:1024px)
+
+/* @media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px){
+  .encab {
+    width: 50%;
+  } 
+  .boton {
+    width: 50%;
+  }
+  .foto {
+    width: 100px;
+    height: 100px;
+  } 
+}
